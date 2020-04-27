@@ -10,7 +10,7 @@
     "request": "^2.88.0"
   },
   "scripts": {
-    "start": "cd client && npm i",
+    "start": "cd client && npm start",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   },
   "engines": {
