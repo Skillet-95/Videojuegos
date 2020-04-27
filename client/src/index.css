@@ -1,0 +1,386 @@
+/* global: overrides bootstrap font with a Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+@font-face {
+  /* 'Arcade Classic' is under copyright (c) Jakob Fischer at www.pizzadude.dk, all rights reserved. */
+  font-family: 'ArcadeClassic';
+  src: url('./font/ArcadeClassic.otf') format('opentype');
+  font-display: fallback;
+}
+
+* {
+  font-family: 'Kulim Park', sans-serif;
+}
+
+h1,
+h3,
+h4,
+h5 {
+  font-family: 'ArcadeClassic', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 0.3em;
+}
+
+/* cookie bar */
+.close {
+  text-shadow: none !important;
+}
+
+/* 404, footer */
+.resized-logo {
+  height: 100%;
+  width: 350px;
+}
+
+.resized-logo-footer {
+  height: 100%;
+  width: 300px;
+  max-width: 320px;
+}
+
+/* header */
+.input-label-style {
+  font-family: 'ArcadeClassic', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 0.3em;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.social-link-style {
+  display: inline-block;
+  width: 118px;
+}
+
+.social-img-style {
+  margin-right: 0.5em;
+  height: 22px;
+  filter: invert(100%);
+}
+
+/* trendingVideogame */
+.card-background {
+  border-width: thick;
+  border-radius: 0px 200px 0px 0px;
+  border-right: 5px solid #ffc107;
+}
+
+.card-img-top {
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.h2-position {
+  left: 20px;
+  top: 100px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.badge-position {
+  left: 20px;
+  top: 20px;
+}
+
+.platform-badge-position {
+  right: 20px;
+  top: 150px;
+}
+
+.platform-badge-margin {
+  margin-right: 0.2em;
+}
+
+.right-badge {
+  right: 0;
+  top: 0;
+}
+
+.loading-anim-size {
+  width: 5rem;
+  height: 5rem;
+}
+
+.img-zoom-container {
+  overflow: hidden;
+  height: 185px;
+}
+
+.img-zoom img {
+  height: 100%;
+  min-height: 185px;
+  display: block;
+  position: relative;
+  transition: all 1s ease-out;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.03);
+}
+
+@media (hover: none) {
+  .img-zoom:hover img {
+    transform: none;
+  }
+}
+
+/* searchForm */
+.autocomplete-img-style {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.dropdown-position {
+  top: 35px;
+}
+
+.form-control:focus {
+  border-color: #ffc107;
+  box-shadow: none;
+}
+
+.result-list-width {
+  width: 385px;
+  color: black;
+}
+
+@media all and (min-width: 321px) and (max-width: 414px) {
+  .result-list-width {
+    width: 320px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .result-list-width {
+    width: 270px;
+  }
+}
+
+.overlay-style {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* videogame */
+.heading-line {
+  line-height: 0.8em;
+}
+
+.details-background {
+  border-radius: 15px;
+}
+
+.gallery-overlay-style {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5000;
+}
+
+.gallery-img-style {
+  padding: 10px;
+  vertical-align: middle;
+  min-height: auto;
+  min-width: 464px;
+  width: auto;
+  max-width: 100%;
+}
+
+.gallery-nav-back-style {
+  user-select: none;
+  opacity: 0.5;
+  z-index: 7000;
+  cursor: pointer;
+  max-width: fit-content;
+  padding: 14px;
+}
+
+.gallery-nav-next-style {
+  user-select: none;
+  opacity: 0.5;
+  z-index: 7000;
+  cursor: pointer;
+  max-width: fit-content;
+  padding: 14px;
+}
+
+.gallery-close-position-style {
+  height: fit-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6000;
+}
+
+.youtube-gallery-close-style {
+  max-width: fit-content;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 10000;
+  padding: 14px 16px;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ff0000;
+  line-height: 1.33;
+}
+
+.gallery-close-style {
+  max-width: fit-content;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 10000;
+  padding: 14px 16px;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  line-height: 1.33;
+}
+
+.youtube-play-style {
+  z-index: 2000;
+  padding: 10px 20px;
+  border-radius: 11px;
+  opacity: 0.85;
+  top: 31%;
+  right: 42%;
+}
+
+.gallery-youtube-style {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.gallery-youtube-nav-back-style {
+  position: absolute;
+  top: 50vh;
+  left: 2px;
+  z-index: 9100;
+  max-width: 50px;
+  height: 50px;
+}
+
+.gallery-youtube-nav-next-style {
+  position: absolute;
+  top: 50vh;
+  right: 2px;
+  z-index: 9000;
+  max-width: 50px;
+  height: 50px;
+}
+
+.oney-background {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+@media all and (max-width: 765px) {
+  .oney-background {
+    background-image: none !important;
+  }
+}
+
+.oney-img-style {
+  filter: drop-shadow(8px 8px 8px black);
+}
+
+.img-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.greyscale-company-logo {
+  filter: grayscale(100%);
+}
+
+.use-pointer {
+  cursor: pointer;
+}
+
+.loading-game {
+  font-size: 4em;
+}
+
+.company-logo-margin {
+  margin-right: 1em;
+}
+
+.tag-badge-margin {
+  margin-right: 0.2em;
+}
+
+/* archive.org button */
+.smaller-free {
+  font-size: 68%;
+}
+
+/* suggestions */
+.suggested-game-style {
+  height: 200px;
+  overflow: hidden;
+}
+
+.suggestion-img-style {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.suggestion-h2 {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+/* screens and videos */
+.img-style {
+  width: 100%;
+}
+
+.vid-style {
+  object-fit: cover;
+  object-position: bottom;
+  height: 100%;
+  max-height: 170px;
+}
+
+@media all and (max-width: 765px) {
+  .vid-style {
+    max-height: 230px;
+  }
+}
+
+/* dev team */
+.dev-avatar-style {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+/* reviews */
+.long-content {
+  overflow: hidden;
+}
+
+/* misc. */
+.bg-white {
+  background-color: #ffffff;
+}
