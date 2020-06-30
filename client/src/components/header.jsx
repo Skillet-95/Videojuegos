@@ -58,10 +58,7 @@ class Header extends Component {
               backgroundRepeat: 'no-repeat'
             }}>
             <header className='container text-white'>
-              <div>   <a href='/'>
-               Jenny eres una perra pero te quiero
-                
-                  </a>  </div>
+            
               <div className='row justify-content-md-center'>
                 <div className='col my-2'>
                   <a href='/'>
