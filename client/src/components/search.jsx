@@ -49,7 +49,7 @@ class Search extends Component {
             onChange={this.setKeywordInInput}
           />
           <label htmlFor='searchform' className='d-none d-md-block input-label-style'>
-            Creado x Nidea
+     Jenny eres una perra pero te quiero
           </label>
           {this.state.dataIsReady ? (
             <Fragment>
